@@ -159,13 +159,20 @@
 
 .ex-10-icon {
     font-size: 60px;
+    animation: gira-10 1s linear infinite;
 }
-.ex-10-icon {
-    animation: gira 1s linear infinite;
-}
-@keyframes gira {
+
+@keyframes gira-10 {
     0% {
         transform: rotate(-360deg);
+        color: red;
+    }
+
+50%{
+    color: green;
+}
+    100% {
+        color: blue;
     }
 
 }
@@ -176,6 +183,31 @@
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover{
+    animation: gira-11 1s linear;
+}
+@keyframes gira-11 {
+    0% {
+        transform: rotate(0deg);
+        color: red;
+    }
+    75% {
+        transform: rotate(calc(3 / 4 * 360deg));
+        color: green;
+    }
+    90% {
+        transform: rotate(0deg);
+        color: blue;
+    }
+}
+
+
+
+
+
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
