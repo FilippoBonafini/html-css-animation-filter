@@ -34,6 +34,7 @@
 }
 .ex-2-square:active {
     width: 100%;
+    height: 20px;
     cursor: wait;
 }
 
@@ -124,9 +125,54 @@
     margin: 50px 100px;
     width: 400px;
 }
+
+.ex-8-img,.ex-7-img,.ex-9-img:hover{
+    transition: 2s;
+}
+
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+
+.ex-6-img:hover,
+.ex-7-img:hover,
+.ex-8-img:hover,
+.ex-9-img:hover{
+    filter: grayscale(1) blur(2px);
+}
+
+.ex-8-img:hover,.ex-9-img:hover{
+    border-radius: 100%;
+}
+
+.ex-9-img:hover{
+    transform: scale(1.5);
+}
+
+
+
+
+
+
+
+
+
 .ex-10-icon {
     font-size: 60px;
 }
+.ex-10-icon {
+    animation: gira 1s linear infinite;
+}
+@keyframes gira {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+}
+
+
+
+
 .ex-11-icon {
     font-size: 60px;
 }
